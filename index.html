@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- SweetAler -->
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css
+    " rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Bakery Recipes</title>
+</head>
+
+<body>
+    <header>
+        <!-- Boostrap Nav -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="./index.html">Bakery Recipes</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/recetas.html">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar Receta" aria-label="Search">
+                        <button class="btn btn-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero animate__animated animate__fadeInDown">
+            <div class="card  mx-auto">
+                <div class="row g-0">
+                    <div class="col-md-7">
+                        <img src="https://images.pexels.com/photos/5687147/pexels-photo-5687147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="img-fluid rounded-start " alt="...">
+                    </div>
+                    <div class="col-md-5 mx-auto text-center">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-1 heroTitle">Delicious Super Cheesecake</h5>
+                            <p class="card-text fs-5 heroText">¡No busques más una receta clásica de cheesecake cremosa
+                                y ultra
+                                suave! Nadie puede negar su simple decadencia...</p>
+                            <button type="button" class="btn btn-dark">Mas Detalles ></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cardContainerTitle animate__animated animate__fadeInLeft">
+            <h3>Recetas Dulces</h3>
+        </div>
+
+        <section id="contenedor-recetas" class="cardContainer animate__animated animate__fadeInRight">
+
+            <!-- <article class="card" style="width: 18rem;">
+                <img src=""
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-dark"></a>
+                </div>
+            </article> -->
+        </section>
+        
+
+        <div class="verTodas">
+            <a href="./pages/recetas.html"><button type="button" class="btn btn-dark"> Ver Todas las recetas >
+                </button></a>
+        </div>
+
+        <section class="category animate__animated animate__fadeInUp">
+
+            <h3>Categorias Populares</h3>
+
+            <div class="categoryContainer">
+                <div class=" categoryCard">
+                    <img src="https://images.pexels.com/photos/6794609/pexels-photo-6794609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top" alt="Bizcochos">
+                    <div class="card-body">
+                        <p class="card-text categoryName">Bizcochos</p>
+                    </div>
+                </div>
+                <div class=" categoryCard">
+                    <img src="https://images.pexels.com/photos/2955816/pexels-photo-2955816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top" alt="Tartas">
+                    <div class="card-body">
+                        <p class="card-text categoryName">Tartas</p>
+                    </div>
+                </div>
+                <div class=" categoryCard">
+                    <img src="https://images.pexels.com/photos/266706/pexels-photo-266706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top" alt="Galletas">
+                    <div class="card-body">
+                        <p class="card-text categoryName">Galletas</p>
+                    </div>
+                </div>
+                <div class=" categoryCard">
+                    <img src="https://images.pexels.com/photos/1425174/pexels-photo-1425174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top" alt="Helados">
+                    <div class="card-body">
+                        <p class="card-text categoryName">Helados</p>
+                    </div>
+                </div>
+                <div class=" categoryCard">
+                    <img src="https://images.pexels.com/photos/9884561/pexels-photo-9884561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top" alt="Puddings">
+                    <div class="card-body">
+                        <p class="card-text categoryName">Puddings</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="subscribe animate__animated animate__fadeInUp">
+            <h2>Delicias a tu Inbox</h2>
+            <h4>Disfruta semanalmente de recetas seleccionadas y recomendaciones</h4>
+            <form>
+                <div class="mb-3 subscribeForm mx-auto">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="introduce tu e-mail">
+                    <div id="emailHelp" class="form-text text-white">Nunca compartiremos tu correo con nadie mas</div>
+                    <button type="submit" class="btn btn-dark">Subscribirme</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="animate__animated animate__fadeInUp">
+        Bakery Recipes &copy; All rights reserved. By Jhenry Sierra
+    </footer>
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- APP -->
+    <script src="./main.js"></script>
+    
+</body>
+
+</html>
